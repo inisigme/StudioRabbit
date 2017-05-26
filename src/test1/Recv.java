@@ -1,4 +1,4 @@
-package com.company;
+package test1;
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
