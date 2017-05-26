@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f20855b-d04c-4319-b6a2-91365c0dc84f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test2/Worker2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test2/Worker3.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sub/EmitLog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sub/ReceiveLogs.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/test2/Worker2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/test2/Worker2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/test2/Worker3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/test2/Worker3.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test2/NewTask.java" afterPath="$PROJECT_DIR$/src/test2/NewTask.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +37,8 @@
       <file leaf-file-name="NewTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test2/NewTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="1" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="48" selection-end-column="1" />
+            <state relative-caret-position="266">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,11 +46,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewTask2.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmitLog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sub/EmitLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReceiveLogs.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sub/ReceiveLogs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewTask2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test2/NewTask2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="249">
+              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,6 +111,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -104,11 +135,13 @@
         <option value="$PROJECT_DIR$/src/test1/Send.java" />
         <option value="$PROJECT_DIR$/src/com/company/NewTask.java" />
         <option value="$PROJECT_DIR$/src/com/company/Worker.java" />
-        <option value="$PROJECT_DIR$/src/test2/NewTask.java" />
         <option value="$PROJECT_DIR$/src/test2/Worker.java" />
         <option value="$PROJECT_DIR$/src/test2/Worker2.java" />
         <option value="$PROJECT_DIR$/src/test2/Worker3.java" />
         <option value="$PROJECT_DIR$/src/test2/NewTask2.java" />
+        <option value="$PROJECT_DIR$/src/test2/NewTask.java" />
+        <option value="$PROJECT_DIR$/src/sub/EmitLog.java" />
+        <option value="$PROJECT_DIR$/src/sub/ReceiveLogs.java" />
       </list>
     </option>
   </component>
@@ -219,6 +252,24 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudioRabbit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudioRabbit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -246,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Worker2">
+  <component name="RunManager" selected="Application.EmitLog">
     <configuration default="false" name="Send" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="test1.Send" />
@@ -498,41 +549,11 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Worker2" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="test2.Worker2" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="StudioRabbit" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="NewTask2" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="test2.NewTask2" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="........" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="StudioRabbit" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Worker3" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="test2.Worker3" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -549,15 +570,45 @@
       <toRun type="Application" name="Worker3" />
       <method />
     </configuration>
+    <configuration default="false" name="EmitLog" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="sub.EmitLog" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="StudioRabbit" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReceiveLogs" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="sub.ReceiveLogs" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="StudioRabbit" />
+      <envs />
+      <method />
+    </configuration>
     <list size="9">
       <item index="0" class="java.lang.String" itemvalue="Application.Recv" />
       <item index="1" class="java.lang.String" itemvalue="Compound.test" />
       <item index="2" class="java.lang.String" itemvalue="Application.Worker" />
       <item index="3" class="java.lang.String" itemvalue="Application.NewTask" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Worker2" />
-      <item index="5" class="java.lang.String" itemvalue="Application.NewTask2" />
-      <item index="6" class="java.lang.String" itemvalue="Application.Worker3" />
-      <item index="7" class="java.lang.String" itemvalue="Compound.test2" />
+      <item index="4" class="java.lang.String" itemvalue="Application.NewTask2" />
+      <item index="5" class="java.lang.String" itemvalue="Compound.test2" />
+      <item index="6" class="java.lang.String" itemvalue="Application.EmitLog" />
+      <item index="7" class="java.lang.String" itemvalue="Application.ReceiveLogs" />
       <item index="8" class="java.lang.String" itemvalue="Application.Send" />
     </list>
     <recent_temporary>
@@ -705,16 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test2/NewTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test2/Worker2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="623">
@@ -725,8 +766,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test2/NewTask2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="249">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test2/NewTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sub/EmitLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sub/ReceiveLogs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
