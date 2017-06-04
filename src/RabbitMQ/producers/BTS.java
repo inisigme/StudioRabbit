@@ -9,6 +9,8 @@ import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
 
+import java.nio.ByteBuffer;
+import java.util.Date;
 import java.io.Console;
 
 public class BTS {
@@ -25,10 +27,17 @@ public class BTS {
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
         int l = 0;
         while(true) {
+            long start_time = System.currentTimeMillis() ;
+            System.out.println(start_time);
+            buf[0]=4;
+            byte [] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
+            for(int i = 0; i < 8; i++)
+                buf[i+1] = bytes[i];
+
             channel.basicPublish(EXCHANGE_NAME, "BTS", null, buf);
             System.out.println(l);
             l+=buf.length;
-            Thread.sleep(2*60*1000 / Config.dif);
+            Thread.sleep(2*60*1000/400/11/ Config.dif);
         }
     }
 

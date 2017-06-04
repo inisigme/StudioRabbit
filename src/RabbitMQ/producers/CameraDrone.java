@@ -8,13 +8,15 @@ import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
+import java.nio.ByteBuffer;
 
 import java.io.Console;
+import java.util.Date;
 
 public class CameraDrone {
 
     private static final String EXCHANGE_NAME = "Gathering";
-    public static final byte[] buf = new byte[1024*1024];
+    public static final byte[] buf = new byte[1024*1024 / 2];
 
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
@@ -25,10 +27,16 @@ public class CameraDrone {
 
         int l = 0;
         while(true) {
+            long start_time = System.currentTimeMillis() ;
+            System.out.println(start_time);
+            buf[0]=1;
+            byte [] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
+            for(int i = 0; i < 8; i++)
+                buf[i+1] = bytes[i];
             channel.basicPublish(EXCHANGE_NAME, "CameraDrone", null, buf);
-            System.out.println(l);
+            //System.out.println(l);
             l+=buf.length;
-            Thread.sleep(1*900 / Config.dif);
+            Thread.sleep(1*1000 / Config.dif);
         }
     }
 

@@ -3,10 +3,12 @@ package RabbitMQ.consumers;
 /**
  * Created by Inisigme on 26-May-17.
  */
+import RabbitMQ.Config;
 import com.rabbitmq.client.*;
-
+import java.io.PrintWriter;
 import java.io.IOException;
-
+import java.io.FileOutputStream;
+import java.io.File;
 public class Subscriber2 {
 
     private static final String EXCHANGE_NAME = "Gathering";
@@ -29,8 +31,29 @@ public class Subscriber2 {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope,
                                        AMQP.BasicProperties properties, byte[] body) throws IOException {
-                String message = new String(body, "UTF-8");
-                System.out.println(" [x] Received '" + envelope.getRoutingKey() + "':'" + message + "'");
+
+                String fileName = "error";
+                switch (body[0]) {
+                    case(1):
+                        fileName = "CameraDrone.txt";
+                        break;
+
+                    case(2):
+                        fileName = "WeatherStation.txt";
+                        break;
+                }
+
+                PrintWriter writer = new PrintWriter(new FileOutputStream(
+                        new File(fileName),
+                        true /* append = true */));
+
+                System.out.println(body[0] + "    " + Config.getLong(body, 1));
+                writer.print(Config.getLong(body, 1));
+                writer.print(';');
+                writer.print(System.currentTimeMillis());
+                writer.println();
+                writer.close();
+
             }
         };
 

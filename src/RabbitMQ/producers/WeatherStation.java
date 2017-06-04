@@ -10,6 +10,7 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
 
 import java.io.Console;
+import java.nio.ByteBuffer;
 
 public class WeatherStation {
 
@@ -23,6 +24,13 @@ public class WeatherStation {
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
         int l = 0;
         while(true) {
+            long start_time = System.currentTimeMillis() ;
+            System.out.println(start_time);
+            buf[0]=2;
+            byte [] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
+            for(int i = 0; i < 8; i++)
+                buf[i+1] = bytes[i];
+
             channel.basicPublish(EXCHANGE_NAME, "WeatherStation", null, buf);
             System.out.println(l);
             l+=buf.length;

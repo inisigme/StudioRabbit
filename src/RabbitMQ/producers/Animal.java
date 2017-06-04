@@ -10,6 +10,7 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
 
 import java.io.Console;
+import java.nio.ByteBuffer;
 
 public class Animal {
 
@@ -25,6 +26,13 @@ public class Animal {
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
         int l = 0;
         while(true) {
+            long start_time = System.currentTimeMillis() ;
+            System.out.println(start_time);
+            buf[0]=3;
+            byte [] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
+            for(int i = 0; i < 8; i++)
+                buf[i+1] = bytes[i];
+
             channel.basicPublish(EXCHANGE_NAME, "Animal", null, buf);
             System.out.println(l);
             l+=buf.length;

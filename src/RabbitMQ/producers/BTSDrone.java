@@ -3,15 +3,18 @@ package RabbitMQ.producers;
 /**
  * Created by Inisigme on 26-May-17.
  */
+import RabbitMQ.Config;
 import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
 
 import java.io.Console;
+import java.nio.ByteBuffer;
 
 public class BTSDrone {
 
+    public static final byte[] buf = new byte[200];
     private static final String EXCHANGE_NAME = "Gathering";
 
     public static void main(String[] argv) throws Exception {
@@ -20,11 +23,20 @@ public class BTSDrone {
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
-        Console console = System.console();
-        channel.basicPublish(EXCHANGE_NAME, "BTSDrone", null, new String("tresc").getBytes("UTF-8"));
+        int l = 0;
+        while(true) {
+            long start_time = System.currentTimeMillis() ;
+            System.out.println(start_time);
+            buf[0]=4;
+            byte [] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
+            for(int i = 0; i < 8; i++)
+                buf[i+1] = bytes[i];
 
-
-
+            channel.basicPublish(EXCHANGE_NAME, "BTS", null, buf);
+            System.out.println(l);
+            l+=buf.length;
+            Thread.sleep(2*60*1000/100/11/ Config.dif);
+        }
     }
 
 }
