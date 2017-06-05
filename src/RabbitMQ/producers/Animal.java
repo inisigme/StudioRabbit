@@ -33,10 +33,10 @@ public class Animal {
             for(int i = 0; i < 8; i++)
                 buf[i+1] = bytes[i];
 
-            channel.basicPublish(EXCHANGE_NAME, "Animal", null, buf);
+            channel.basicPublish(EXCHANGE_NAME, "Animals", null, buf);
             System.out.println(l);
             l+=buf.length;
-            Thread.sleep(10*60*1000 / Config.dif);
+            Thread.sleep(2*60*1000 / Config.dif);
         }
     }
 
