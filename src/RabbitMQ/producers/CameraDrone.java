@@ -12,11 +12,12 @@ import java.nio.ByteBuffer;
 
 import java.io.Console;
 import java.util.Date;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class CameraDrone {
 
     private static final String EXCHANGE_NAME = "Gathering";
-    public static final byte[] buf = new byte[1024*1024 / 2];
+    public static final byte[] buf = new byte[1024*1024];
 
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
@@ -25,19 +26,22 @@ public class CameraDrone {
         Channel channel = connection.createChannel();
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
 
-        int l = 0;
         while(true) {
-            long start_time = System.currentTimeMillis() ;
-            System.out.println(start_time);
-            buf[0]=1;
-            byte [] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
-            for(int i = 0; i < 8; i++)
-                buf[i+1] = bytes[i];
-            channel.basicPublish(EXCHANGE_NAME, "CameraDrone", null, buf);
-            //System.out.println(l);
-            l+=buf.length;
-            Thread.sleep(1*1000 / Config.dif);
+            int counter = 60 * 20 / Config.dif;
+            while (counter > 0) {
+                long start_time = System.currentTimeMillis();
+                System.out.println(start_time);
+                buf[0] = 1;
+                byte[] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
+                System.arraycopy(bytes, 0, buf, 1, 7);
+
+                channel.basicPublish(EXCHANGE_NAME, "CameraDrone", null, buf);
+                counter--;
+                Thread.sleep(1000 / Config.dif);
+            }
+            Thread.sleep(1000*60*10);
         }
+
     }
 
 }

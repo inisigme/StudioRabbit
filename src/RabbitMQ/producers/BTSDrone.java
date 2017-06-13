@@ -18,6 +18,7 @@ public class BTSDrone {
     private static final String EXCHANGE_NAME = "Gathering";
 
     public static void main(String[] argv) throws Exception {
+
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
         Connection connection = factory.newConnection();
@@ -27,15 +28,13 @@ public class BTSDrone {
         while(true) {
             long start_time = System.currentTimeMillis() ;
             System.out.println(start_time);
-            buf[0]=4;
+            buf[0]=5;
             byte [] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
-            for(int i = 0; i < 8; i++)
-                buf[i+1] = bytes[i];
+            System.arraycopy(bytes, 0, buf, 1, 7);
 
-            channel.basicPublish(EXCHANGE_NAME, "BTS", null, buf);
-            System.out.println(l);
-            l+=buf.length;
-            Thread.sleep(2*60*1000/100/11/ Config.dif);
+            channel.basicPublish(EXCHANGE_NAME, "BTSDrone", null, buf);
+
+            Thread.sleep(60*1000/2/ Config.dif);
         }
     }
 
