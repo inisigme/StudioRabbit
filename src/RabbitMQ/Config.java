@@ -1,10 +1,13 @@
 package RabbitMQ;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * Created by Inisigme on 27-May-17.
  */
 public class Config {
-    public static final int dif = 1;
+
+    public static final int dif = 10;
     public static long getLong(byte[] array, int offset) {
         return
                 ((long)(array[offset]   & 0xff) << 56) |
