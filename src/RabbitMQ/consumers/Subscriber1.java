@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.ByteBuffer;
 
 public class Subscriber1 {
 
@@ -34,33 +35,18 @@ public class Subscriber1 {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope,
                                        AMQP.BasicProperties properties, byte[] body) throws IOException {
-                String fileName = "error";
-                switch (body[0]) {
-                    case(3):
-                        fileName = "Animal.txt";
-                        break;
 
-                    case(4):
-                        fileName = "BTS.txt";
-                        break;
-
-                    case(5):
-                        fileName = "BTS.txt";
-                        break;
-                }
+                String fileName = envelope.getRoutingKey() + ".txt";
 
                 PrintWriter writer = new PrintWriter(new FileOutputStream(
                         new File(fileName),
                         true /* append = true */));
-
-                System.out.println(body[0] + "    " + Config.getLong(body, 1));
-                writer.print(Config.getLong(body, 1));
-                writer.print(';');
-                writer.print(System.currentTimeMillis());
-                writer.println();
+                long get = System.currentTimeMillis();
+                long time = get - ByteBuffer.wrap(body,1,8).getLong();
+                writer.print(get+";");
+                writer.print(time);
+                writer.println(";");
                 writer.close();
-
-
             }
         };
 
