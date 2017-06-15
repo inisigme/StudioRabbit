@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f20855b-d04c-4319-b6a2-91365c0dc84f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/Config.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/Config.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber1$1.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber1.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber2$1.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber2.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/Animal.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/Animal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/BTS.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/BTS.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/BTSDrone.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/BTSDrone.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/CameraDrone.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/CameraDrone.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/WeatherStation.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/WeatherStation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/Config.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/Config.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber2.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java" />
@@ -43,11 +30,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Subscriber1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WeatherStation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subscriber1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-91">
-              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -56,7 +53,7 @@
       <file leaf-file-name="Subscriber2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
+            <state relative-caret-position="686">
               <caret line="57" column="60" lean-forward="false" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -69,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,8 +77,8 @@
       <file leaf-file-name="CameraDrone.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/CameraDrone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="37" column="53" lean-forward="false" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+            <state relative-caret-position="179">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,8 +89,8 @@
       <file leaf-file-name="BTSDrone.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="134">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,8 +101,8 @@
       <file leaf-file-name="Animal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            <state relative-caret-position="284">
+              <caret line="34" column="56" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="34" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,14 +181,14 @@
         <option value="$PROJECT_DIR$/Animal.txt" />
         <option value="$PROJECT_DIR$/BTS.txt" />
         <option value="$PROJECT_DIR$/CameraDrone.txt" />
-        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java" />
-        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/CameraDrone.java" />
-        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java" />
-        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java" />
-        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java" />
         <option value="$PROJECT_DIR$/src/RabbitMQ/Config.java" />
         <option value="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber2.java" />
         <option value="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java" />
+        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java" />
+        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java" />
+        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/CameraDrone.java" />
+        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java" />
+        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java" />
       </list>
     </option>
   </component>
@@ -279,7 +276,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="consumers" />
+              <option name="myItemId" value="producers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Sub1">
+  <component name="RunManager" selected="Application.Animal">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -695,7 +692,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497370710479</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Zmiana z routing na exchange">
+      <created>1497538230260</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1497538230260</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -704,12 +708,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3220859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -726,7 +731,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32860824" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -768,7 +772,8 @@
     <MESSAGE value="Zmieniono ilość i sposób wysyłania wiadomości (bulk), usunięto wypisywanie w konsoli" />
     <MESSAGE value="Zmieniono sposób logowania, usunięto pętlę case - filename bazuje teraz na kluczu wiadomości" />
     <MESSAGE value="Usunięto tutki" />
-    <option name="LAST_COMMIT_MESSAGE" value="Usunięto tutki" />
+    <MESSAGE value="Zmiana z routing na exchange" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zmiana z routing na exchange" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -857,6 +862,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -930,6 +936,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -985,17 +992,25 @@
     <entry file="file://$PROJECT_DIR$/CameraDrone.txt" />
     <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber3.java" />
     <entry file="file://$PROJECT_DIR$/Animal.txt" />
-    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java">
+    <entry file="file://$PROJECT_DIR$/BTS.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+        <state relative-caret-position="-33345">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/CameraDrone.java">
+    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="37" column="53" lean-forward="false" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+        <state relative-caret-position="-91">
+          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="34" column="56" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="34" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1004,25 +1019,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        <state relative-caret-position="134">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BTS.txt">
+    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/CameraDrone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33345">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="179">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1032,7 +1040,7 @@
     <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1041,7 +1049,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
+        <state relative-caret-position="686">
           <caret line="57" column="60" lean-forward="false" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1057,10 +1065,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java">
+    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="164">
+          <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
           <folding />
         </state>
       </provider>

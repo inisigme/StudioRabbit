@@ -20,11 +20,21 @@ public class BTSDrone {
     public static void main(String[] argv) throws Exception {
 
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
-        Connection connection = factory.newConnection();
-        Channel channel = connection.createChannel();
-        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
-        int l = 0;
+        factory.setUsername("test");
+        factory.setPassword("test");
+        //factory.setVirtualHost();
+        factory.setHost("192.168.1.100");
+        //factory.setPort(portNumber);
+        Connection conn = factory.newConnection();
+        Channel channel = conn.createChannel();
+
+        // ConnectionFactory factory = new ConnectionFactory();
+        // factory.setHost("localhost");
+        // Connection connection = factory.newConnection();
+        // Channel channel = connection.createChannel();
+
+        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
+
         while(true) {
             long start_time = System.currentTimeMillis() ;
             System.out.println(start_time);

@@ -19,11 +19,21 @@ public class Animal {
     private static final byte[] buf = new byte[50];
 
     public static void main(String[] argv) throws Exception {
+
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
-        Connection connection = factory.newConnection();
-        Channel channel = connection.createChannel();
-        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
+        factory.setUsername("test");
+        factory.setPassword("test");
+        //factory.setVirtualHost();
+        factory.setHost("192.168.1.100");
+        //factory.setPort(portNumber);
+        Connection conn = factory.newConnection();
+        Channel channel = conn.createChannel();
+
+        // ConnectionFactory factory = new ConnectionFactory();
+        // factory.setHost("localhost");
+        // Connection connection = factory.newConnection();
+        // Channel channel = connection.createChannel();
+        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
 
         while(true) {
             for(int j = 5; j>0; --j) {

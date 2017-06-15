@@ -18,9 +18,18 @@ public class WeatherStation {
     public static final byte[] buf = new byte[20];
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
-        Connection connection = factory.newConnection();
-        Channel channel = connection.createChannel();
+        factory.setUsername("test");
+        factory.setPassword("test");
+        //factory.setVirtualHost();
+        factory.setHost("192.168.1.100");
+        //factory.setPort(portNumber);
+        Connection conn = factory.newConnection();
+        Channel channel = conn.createChannel();
+
+        // ConnectionFactory factory = new ConnectionFactory();
+        // factory.setHost("localhost");
+        // Connection connection = factory.newConnection();
+        // Channel channel = connection.createChannel();
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
 
         while(true) {
