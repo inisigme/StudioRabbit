@@ -31,8 +31,11 @@ public class Animal {
         long timeDiff = (timeBefore + timeAfter - 2*timeInfo.getReturnTime())/2;
 
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setUri("amqp://xxfikmfg:JFchWCnY03w_XRNGK-2cnna21Ag-NIq_@golden-kangaroo.rmq.cloudamqp.com/xxfikmfg");
+//        factory.setUri("amqp://xxfikmfg:JFchWCnY03w_XRNGK-2cnna21Ag-NIq_@golden-kangaroo.rmq.cloudamqp.com/xxfikmfg");
+//        factory.setUri("amqp://mexetgrf:eGwCFRwjj-9iKw6VhGXSMLroZqRXyJzG@puma.rmq.cloudamqp.com/mexetgrf");
+        factory.setUri("amqp://mvgskkgb:2hOkp0TFI8lYnw7bhARKpIMt1KV5GqEL@lark.rmq.cloudamqp.com/mvgskkgb");
         Connection conn = factory.newConnection();
+
         Channel channel = conn.createChannel();
 
 //        ConnectionFactory factory = new ConnectionFactory();

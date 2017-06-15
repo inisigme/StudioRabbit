@@ -27,7 +27,8 @@ public class BTSDrone {
 //        Channel channel = conn.createChannel();
 
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setUri("amqp://xxfikmfg:JFchWCnY03w_XRNGK-2cnna21Ag-NIq_@golden-kangaroo.rmq.cloudamqp.com/xxfikmfg");
+//        factory.setUri("amqp://xxfikmfg:JFchWCnY03w_XRNGK-2cnna21Ag-NIq_@golden-kangaroo.rmq.cloudamqp.com/xxfikmfg");
+        factory.setUri("amqp://mvgskkgb:2hOkp0TFI8lYnw7bhARKpIMt1KV5GqEL@lark.rmq.cloudamqp.com/mvgskkgb");
         Connection conn = factory.newConnection();
         Channel channel = conn.createChannel();
 
