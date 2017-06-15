@@ -16,7 +16,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class CameraDrone {
 
-    private static final String EXCHANGE_NAME = "Gathering";
+    private static final String EXCHANGE_NAME = "CameraDrone";
     public static final byte[] buf = new byte[1024*1024];
 
     public static void main(String[] argv) throws Exception {
@@ -35,7 +35,7 @@ public class CameraDrone {
                 byte[] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
                 System.arraycopy(bytes, 0, buf, 1, 7);
 
-                channel.basicPublish(EXCHANGE_NAME, "CameraDrone", null, buf);
+                channel.basicPublish(EXCHANGE_NAME, "", null, buf);
                 counter--;
                 Thread.sleep(1000 / Config.dif);
             }

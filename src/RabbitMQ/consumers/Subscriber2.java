@@ -14,7 +14,7 @@ import java.nio.ByteBuffer;
 
 public class Subscriber2 {
 
-    private static final String EXCHANGE_NAME = "Gathering";
+    //private static final String EXCHANGE_NAME = "";
 
     public static void main(String[] argv) throws Exception {
 
@@ -22,11 +22,15 @@ public class Subscriber2 {
         factory.setHost("localhost");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
-        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
-        String queueName = channel.queueDeclare().getQueue();
 
-        channel.queueBind(queueName, EXCHANGE_NAME, "CameraDrone");
-        channel.queueBind(queueName, EXCHANGE_NAME, "WeatherStation");
+        channel.exchangeDeclare("CameraDrone", BuiltinExchangeType.DIRECT);
+        channel.exchangeDeclare("WeatherStation", BuiltinExchangeType.FANOUT);
+
+        String queueCamera1 = channel.queueDeclare().getQueue();
+        String queueWeather1 = channel.queueDeclare().getQueue();
+
+        channel.queueBind(queueCamera1, "CameraDrone", "");
+        channel.queueBind(queueWeather1, "WeatherStation", "");
 
         System.out.println("Waiting for messages. To exit press CTRL+C");
 
@@ -50,6 +54,7 @@ public class Subscriber2 {
             }
         };
 
-        channel.basicConsume(queueName, true, consumer);
+        channel.basicConsume(queueCamera1, true, consumer);
+        channel.basicConsume(queueWeather1, true, consumer);
     }
 }

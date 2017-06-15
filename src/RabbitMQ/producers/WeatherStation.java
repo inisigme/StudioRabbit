@@ -14,7 +14,7 @@ import java.nio.ByteBuffer;
 
 public class WeatherStation {
 
-    private static final String EXCHANGE_NAME = "Gathering";
+    private static final String EXCHANGE_NAME = "WeatherStation";
     public static final byte[] buf = new byte[20];
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
@@ -31,7 +31,7 @@ public class WeatherStation {
                 byte[] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
                 System.arraycopy(bytes, 0, buf, 1, 7);
 
-                channel.basicPublish(EXCHANGE_NAME, "WeatherStation", null, buf);
+                channel.basicPublish(EXCHANGE_NAME, "", null, buf);
             }
             Thread.sleep(5*60*1000 / Config.dif);
         }

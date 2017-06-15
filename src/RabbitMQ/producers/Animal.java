@@ -14,7 +14,7 @@ import java.nio.ByteBuffer;
 
 public class Animal {
 
-    private static final String EXCHANGE_NAME = "Gathering";
+    private static final String EXCHANGE_NAME = "Animals";
 
     private static final byte[] buf = new byte[50];
 
@@ -33,7 +33,7 @@ public class Animal {
                 byte[] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
                 System.arraycopy(bytes, 0, buf, 1, 7);
 
-                channel.basicPublish(EXCHANGE_NAME, "Animals", null, buf);
+                channel.basicPublish(EXCHANGE_NAME, "", null, buf);
                 //Thread.sleep(10);
             }
             Thread.sleep(1*60*1000 / Config.dif);

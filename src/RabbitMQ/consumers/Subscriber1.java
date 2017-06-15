@@ -11,10 +11,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.ByteBuffer;
+import java.util.*;
 
 public class Subscriber1 {
 
-    private static final String EXCHANGE_NAME = "Gathering";
+    //private static final String EXCHANGE_NAME = "Gathering";
 
     public static void main(String[] argv) throws Exception {
 
@@ -22,12 +23,22 @@ public class Subscriber1 {
         factory.setHost("localhost");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
-        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
-        String queueName = channel.queueDeclare().getQueue();
 
-        channel.queueBind(queueName, EXCHANGE_NAME, "Animals");
-        channel.queueBind(queueName, EXCHANGE_NAME, "BTS");
-        channel.queueBind(queueName, EXCHANGE_NAME, "BTSDrone");
+        //Exchanges avaliable :
+        //Animals, BTS, BTSDrone, WeatherStation, CameraDrone;
+
+        channel.exchangeDeclare("Animals", BuiltinExchangeType.FANOUT);
+        channel.exchangeDeclare("BTS", BuiltinExchangeType.FANOUT);
+        channel.exchangeDeclare("BTSDrone", BuiltinExchangeType.FANOUT);
+
+        String queueAnimal1 = channel.queueDeclare().getQueue();
+        String queueBTS1 = channel.queueDeclare().getQueue();
+        String queueBTSDrone1 = channel.queueDeclare().getQueue();
+
+
+        channel.queueBind(queueAnimal1, "Animals", "");
+        channel.queueBind(queueBTSDrone1, "BTSDrone", "");
+        channel.queueBind(queueBTS1, "BTS", "");
 
         System.out.println("Waiting for messages. To exit press CTRL+C");
 
@@ -36,8 +47,8 @@ public class Subscriber1 {
             public void handleDelivery(String consumerTag, Envelope envelope,
                                        AMQP.BasicProperties properties, byte[] body) throws IOException {
 
-                String fileName = envelope.getRoutingKey() + ".txt";
-
+                String fileName = envelope.getExchange() + ".txt";
+                System.out.println("delivered from "+envelope.getExchange());
                 PrintWriter writer = new PrintWriter(new FileOutputStream(
                         new File(fileName),
                         true /* append = true */));
@@ -50,6 +61,8 @@ public class Subscriber1 {
             }
         };
 
-        channel.basicConsume(queueName, true, consumer);
+        channel.basicConsume(queueAnimal1, true, consumer);
+        channel.basicConsume(queueBTS1, true, consumer);
+        channel.basicConsume(queueBTSDrone1, true, consumer);
     }
 }

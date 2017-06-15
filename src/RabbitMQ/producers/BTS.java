@@ -15,7 +15,7 @@ import java.io.Console;
 
 public class BTS {
 
-    private static final String EXCHANGE_NAME = "Gathering";
+    private static final String EXCHANGE_NAME = "BTS";
 
     public static final byte[] buf = new byte[200];
 
@@ -35,7 +35,7 @@ public class BTS {
                 byte[] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
                 System.arraycopy(bytes, 0, buf, 1, 7);
 
-                channel.basicPublish(EXCHANGE_NAME, "BTS", null, buf);
+                channel.basicPublish(EXCHANGE_NAME, "", null, buf);
              }
             Thread.sleep(60*1000 / Config.dif);
         }

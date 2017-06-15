@@ -15,7 +15,7 @@ import java.nio.ByteBuffer;
 public class BTSDrone {
 
     public static final byte[] buf = new byte[200];
-    private static final String EXCHANGE_NAME = "Gathering";
+    private static final String EXCHANGE_NAME = "BTSDrone";
 
     public static void main(String[] argv) throws Exception {
 
@@ -32,7 +32,7 @@ public class BTSDrone {
             byte [] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
             System.arraycopy(bytes, 0, buf, 1, 7);
 
-            channel.basicPublish(EXCHANGE_NAME, "BTSDrone", null, buf);
+            channel.basicPublish(EXCHANGE_NAME, "", null, buf);
 
             Thread.sleep(60*1000/2/ Config.dif);
         }
