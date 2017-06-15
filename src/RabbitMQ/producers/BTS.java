@@ -34,19 +34,19 @@ public class BTS {
         long timeAfter = System.currentTimeMillis();
         long timeDiff = (timeBefore + timeAfter - 2*timeInfo.getReturnTime())/2;
 
-//        ConnectionFactory factory = new ConnectionFactory();
-//        factory.setUsername("test1");
-//        factory.setPassword("test1");
-//        //factory.setVirtualHost();
-//        factory.setHost("25.67.28.99");
-//        //factory.setPort(portNumber);
-//        Connection conn = factory.newConnection();
-//        Channel channel = conn.createChannel();
+        ConnectionFactory factory = new ConnectionFactory();
+        factory.setUsername("test1");
+        factory.setPassword("test1");
+        //factory.setVirtualHost();
+        factory.setHost("25.67.28.99");
+        //factory.setPort(portNumber);
+        Connection conn = factory.newConnection();
+        Channel channel = conn.createChannel();
 
-         ConnectionFactory factory = new ConnectionFactory();
-         factory.setHost("localhost");
-         Connection connection = factory.newConnection();
-         Channel channel = connection.createChannel();
+//         ConnectionFactory factory = new ConnectionFactory();
+//         factory.setHost("localhost");
+//         Connection connection = factory.newConnection();
+//         Channel channel = connection.createChannel();
 
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
 

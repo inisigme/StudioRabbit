@@ -8,8 +8,11 @@ import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
+import org.apache.commons.net.ntp.NTPUDPClient;
+import org.apache.commons.net.ntp.TimeInfo;
 
 import java.io.Console;
+import java.net.InetAddress;
 import java.nio.ByteBuffer;
 
 public class WeatherStation {
@@ -17,11 +20,21 @@ public class WeatherStation {
     private static final String EXCHANGE_NAME = "WeatherStation";
     public static final byte[] buf = new byte[20];
     public static void main(String[] argv) throws Exception {
+        String TIME_SERVER = "time-a.nist.gov";
+        NTPUDPClient timeClient = new NTPUDPClient();
+        InetAddress inetAddress = InetAddress.getByName(TIME_SERVER);
+        TimeInfo timeInfo;
+
+        long timeBefore = System.currentTimeMillis();
+        timeInfo = timeClient.getTime(inetAddress);
+        long timeAfter = System.currentTimeMillis();
+        long timeDiff = (timeBefore + timeAfter - 2*timeInfo.getReturnTime())/2;
+
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setUsername("test");
-        factory.setPassword("test");
+        factory.setUsername("test1");
+        factory.setPassword("test1");
         //factory.setVirtualHost();
-        factory.setHost("192.168.1.100");
+        factory.setHost("25.67.28.99");
         //factory.setPort(portNumber);
         Connection conn = factory.newConnection();
         Channel channel = conn.createChannel();
@@ -30,11 +43,11 @@ public class WeatherStation {
         // factory.setHost("localhost");
         // Connection connection = factory.newConnection();
         // Channel channel = connection.createChannel();
-        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
+        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
 
         while(true) {
             for(int j = 11; j>0; --j) {
-                long start_time = System.currentTimeMillis();
+                long start_time = System.currentTimeMillis()-timeDiff;
                 System.out.println(start_time);
                 buf[0] = 2;
                 byte[] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
@@ -42,7 +55,7 @@ public class WeatherStation {
 
                 channel.basicPublish(EXCHANGE_NAME, "", null, buf);
             }
-            Thread.sleep(5*60*1000 / Config.dif);
+            Thread.sleep(60*1000 / Config.dif);
         }
 
     }

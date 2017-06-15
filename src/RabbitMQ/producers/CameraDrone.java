@@ -8,6 +8,10 @@ import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
+import org.apache.commons.net.ntp.NTPUDPClient;
+import org.apache.commons.net.ntp.TimeInfo;
+
+import java.net.InetAddress;
 import java.nio.ByteBuffer;
 
 import java.io.Console;
@@ -17,15 +21,25 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class CameraDrone {
 
     private static final String EXCHANGE_NAME = "CameraDrone";
-    public static final byte[] buf = new byte[1024*1024];
+    public static final byte[] buf = new byte[1024*512];
 
     public static void main(String[] argv) throws Exception {
 
+        String TIME_SERVER = "time-a.nist.gov";
+        NTPUDPClient timeClient = new NTPUDPClient();
+        InetAddress inetAddress = InetAddress.getByName(TIME_SERVER);
+        TimeInfo timeInfo;
+
+        long timeBefore = System.currentTimeMillis();
+        timeInfo = timeClient.getTime(inetAddress);
+        long timeAfter = System.currentTimeMillis();
+        long timeDiff = (timeBefore + timeAfter - 2*timeInfo.getReturnTime())/2;
+
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setUsername("test");
-        factory.setPassword("test");
+        factory.setUsername("test1");
+        factory.setPassword("test1");
         //factory.setVirtualHost();
-        factory.setHost("192.168.1.100");
+        factory.setHost("25.67.28.99");
         //factory.setPort(portNumber);
         Connection conn = factory.newConnection();
         Channel channel = conn.createChannel();
@@ -39,7 +53,7 @@ public class CameraDrone {
         while(true) {
             int counter = 60 * 20 / Config.dif;
             while (counter > 0) {
-                long start_time = System.currentTimeMillis();
+                long start_time = System.currentTimeMillis()-timeDiff;
                 System.out.println(start_time);
                 buf[0] = 1;
                 byte[] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
