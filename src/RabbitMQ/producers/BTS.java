@@ -3,7 +3,6 @@ package RabbitMQ.producers;
 /**
  * Created by Inisigme on 26-May-17.
  */
-import RabbitMQ.Config;
 import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
@@ -13,8 +12,6 @@ import org.apache.commons.net.ntp.TimeInfo;
 
 import java.net.InetAddress;
 import java.nio.ByteBuffer;
-import java.util.Date;
-import java.io.Console;
 
 public class BTS {
 
@@ -65,7 +62,7 @@ public class BTS {
 
                 channel.basicPublish(EXCHANGE_NAME, "", null, buf);
              }
-            Thread.sleep(60*1000 / Config.dif);
+            Thread.sleep(2*60*1000);
         }
     }
 

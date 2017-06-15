@@ -3,13 +3,11 @@ package RabbitMQ.producers;
 /**
  * Created by Inisigme on 26-May-17.
  */
-import RabbitMQ.Config;
 import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
 
-import java.io.Console;
 import java.nio.ByteBuffer;
 
 public class BTSDrone {
@@ -49,7 +47,7 @@ public class BTSDrone {
 
             channel.basicPublish(EXCHANGE_NAME, "", null, buf);
 
-            Thread.sleep(60*1000/2/ Config.dif);
+            Thread.sleep(60*1000*2);
         }
     }
 

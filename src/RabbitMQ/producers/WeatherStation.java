@@ -3,7 +3,6 @@ package RabbitMQ.producers;
 /**
  * Created by Inisigme on 26-May-17.
  */
-import RabbitMQ.Config;
 import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
@@ -11,14 +10,15 @@ import com.rabbitmq.client.Channel;
 import org.apache.commons.net.ntp.NTPUDPClient;
 import org.apache.commons.net.ntp.TimeInfo;
 
-import java.io.Console;
 import java.net.InetAddress;
 import java.nio.ByteBuffer;
 
 public class WeatherStation {
 
     private static final String EXCHANGE_NAME = "WeatherStation";
+
     public static final byte[] buf = new byte[20];
+
     public static void main(String[] argv) throws Exception {
         String TIME_SERVER = "time-a.nist.gov";
         NTPUDPClient timeClient = new NTPUDPClient();
@@ -60,7 +60,7 @@ public class WeatherStation {
 
                 channel.basicPublish(EXCHANGE_NAME, "", null, buf);
             }
-            Thread.sleep(60*1000 / Config.dif);
+            Thread.sleep(5*60*1000);
         }
 
     }

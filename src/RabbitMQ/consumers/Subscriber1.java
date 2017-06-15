@@ -3,7 +3,6 @@ package RabbitMQ.consumers;
 /**
  * Created by Inisigme on 26-May-17.
  */
-import RabbitMQ.Config;
 import com.rabbitmq.client.*;
 
 import java.io.File;
@@ -12,7 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.nio.ByteBuffer;
-import java.util.*;
+
 import org.apache.commons.net.ntp.NTPUDPClient;
 import org.apache.commons.net.ntp.TimeInfo;
 
@@ -45,16 +44,16 @@ public class Subscriber1 {
         //Exchanges avaliable :
         //Animals, BTS, BTSDrone, WeatherStation, CameraDrone;
 
-        channel.exchangeDeclare("Animals", BuiltinExchangeType.FANOUT);
+//        channel.exchangeDeclare("Animals", BuiltinExchangeType.FANOUT);
         channel.exchangeDeclare("BTS", BuiltinExchangeType.FANOUT);
         channel.exchangeDeclare("BTSDrone", BuiltinExchangeType.FANOUT);
 
-        String queueAnimal1 = channel.queueDeclare().getQueue();
+//        String queueAnimal1 = channel.queueDeclare().getQueue();
         String queueBTS1 = channel.queueDeclare().getQueue();
         String queueBTSDrone1 = channel.queueDeclare().getQueue();
 
 
-        channel.queueBind(queueAnimal1, "Animals", "");
+//        channel.queueBind(queueAnimal1, "Animals", "");
         channel.queueBind(queueBTSDrone1, "BTSDrone", "");
         channel.queueBind(queueBTS1, "BTS", "");
 
@@ -80,7 +79,7 @@ public class Subscriber1 {
             }
         };
 
-        channel.basicConsume(queueAnimal1, true, consumer);
+//        channel.basicConsume(queueAnimal1, true, consumer);
         channel.basicConsume(queueBTS1, true, consumer);
         channel.basicConsume(queueBTSDrone1, true, consumer);
     }

@@ -3,8 +3,6 @@ package RabbitMQ.consumers;
 /**
  * Created by Inisigme on 26-May-17.
  */
-import RabbitMQ.Config;
-import RabbitMQ.producers.CameraDrone;
 import com.rabbitmq.client.*;
 import org.apache.commons.net.ntp.NTPUDPClient;
 import org.apache.commons.net.ntp.TimeInfo;
@@ -42,16 +40,19 @@ public class Subscriber2 {
 //        Connection connection = factory.newConnection();
 //        Channel channel = connection.createChannel();
 
+        channel.exchangeDeclare("Animals", BuiltinExchangeType.FANOUT);
         channel.exchangeDeclare("CameraDrone", BuiltinExchangeType.DIRECT);
         channel.exchangeDeclare("WeatherStation", BuiltinExchangeType.FANOUT);
 
+        String queueAnimals1 = channel.queueDeclare().getQueue();
         String queueCamera1 = channel.queueDeclare().getQueue();
         String queueWeather1 = channel.queueDeclare().getQueue();
 
+        channel.queueBind(queueAnimals1, "Animals", "");
         channel.queueBind(queueCamera1, "CameraDrone", "");
         channel.queueBind(queueWeather1, "WeatherStation", "");
 
-        System.out.println("Waiting for messages. To exit press CTRL+C");
+        System.out.println("Waiting for messages...");
 
         Consumer consumer = new DefaultConsumer(channel) {
             @Override
@@ -74,6 +75,7 @@ public class Subscriber2 {
             }
         };
 
+        channel.basicConsume(queueAnimals1, true, consumer);
         channel.basicConsume(queueCamera1, true, consumer);
         channel.basicConsume(queueWeather1, true, consumer);
     }

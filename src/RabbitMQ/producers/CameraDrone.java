@@ -3,7 +3,6 @@ package RabbitMQ.producers;
 /**
  * Created by Inisigme on 26-May-17.
  */
-import RabbitMQ.Config;
 import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
@@ -14,13 +13,10 @@ import org.apache.commons.net.ntp.TimeInfo;
 import java.net.InetAddress;
 import java.nio.ByteBuffer;
 
-import java.io.Console;
-import java.util.Date;
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class CameraDrone {
 
     private static final String EXCHANGE_NAME = "CameraDrone";
+
     public static final byte[] buf = new byte[1024*1024];
 
     public static void main(String[] argv) throws Exception {
@@ -56,7 +52,27 @@ public class CameraDrone {
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
 
         while(true) {
-            int counter = 60 * 20 / Config.dif;
+            //raz dwie, raz jedną - 10min idle, 10min x1, 10min idle, 10min x2
+
+            Thread.sleep(1000*60*10);
+
+            int counter = 60 * 10;
+            System.out.println("Camera out");
+            while (counter > 0) {
+                long start_time = System.currentTimeMillis() - timeDiff;
+                System.out.println(start_time);
+                buf[0] = 1;
+                byte[] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
+                System.arraycopy(bytes, 0, buf, 1, 7);
+
+                channel.basicPublish(EXCHANGE_NAME, "", null, buf);
+                counter--;
+                Thread.sleep(1000);
+            }
+            counter = 60 * 10;
+            Thread.sleep(1000*60*10);
+
+            System.out.println("Camera 5min, 2 cameras 5min");
             while (counter > 0) {
                 long start_time = System.currentTimeMillis()-timeDiff;
                 System.out.println(start_time);
@@ -66,8 +82,25 @@ public class CameraDrone {
 
                 channel.basicPublish(EXCHANGE_NAME, "", null, buf);
                 counter--;
-                Thread.sleep(1000 / Config.dif);
+                Thread.sleep(1000);
             }
+            counter = 60 * 10;
+            Thread.sleep(1000*60*10);
+
+            System.out.println("Two cameras 10min");
+
+            while (counter > 0) {
+                long start_time = System.currentTimeMillis()-timeDiff;
+                System.out.println(start_time);
+                buf[0] = 1;
+                byte[] bytes = ByteBuffer.allocate(8).putLong(start_time).array();
+                System.arraycopy(bytes, 0, buf, 1, 7);
+
+                channel.basicPublish(EXCHANGE_NAME, "", null, buf);
+                counter--;
+                Thread.sleep(1000);
+            }
+            counter = 60 * 10;
             Thread.sleep(1000*60*10);
         }
 

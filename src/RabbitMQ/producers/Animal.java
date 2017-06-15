@@ -2,7 +2,6 @@ package RabbitMQ.producers;
 /**
  * Created by Inisigme on 26-May-17.
  */
-import RabbitMQ.Config;
 import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
@@ -10,7 +9,6 @@ import com.rabbitmq.client.Channel;
 import org.apache.commons.net.ntp.NTPUDPClient;
 import org.apache.commons.net.ntp.TimeInfo;
 
-import java.io.Console;
 import java.net.InetAddress;
 import java.nio.ByteBuffer;
 
@@ -64,7 +62,7 @@ public class Animal {
                 channel.basicPublish(EXCHANGE_NAME, "", null, buf);
                 //Thread.sleep(10);
             }
-            Thread.sleep(1*60*1000 / Config.dif);
+            Thread.sleep(2*60*1000);
         }
     }
 
