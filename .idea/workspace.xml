@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f20855b-d04c-4319-b6a2-91365c0dc84f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_net_3_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_net_3_6_sources.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber2$1.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/consumers/Subscriber2$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/Animal.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/Animal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/BTS.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/BTS.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/BTSDrone.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/BTSDrone.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/CameraDrone.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/CameraDrone.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/WeatherStation.class" afterPath="$PROJECT_DIR$/out/production/StudioRabbit/RabbitMQ/producers/WeatherStation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StudioRabbit.iml" afterPath="$PROJECT_DIR$/StudioRabbit.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/producers/CameraDrone.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/producers/CameraDrone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java" afterPath="$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,28 +33,34 @@
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/Config.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="66" lean-forward="false" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
-              <folding />
+              <caret line="15" column="64" lean-forward="false" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+              <folding>
+                <marker date="1497542466740" expanded="true" signature="776:781" ph="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeatherStation.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WeatherStation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="254">
+              <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+              <folding>
+                <marker date="1497542466744" expanded="true" signature="1629:1669" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Subscriber1.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Subscriber1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-91">
-              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="389">
+              <caret line="34" column="67" lean-forward="true" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,10 +68,10 @@
       <file leaf-file-name="Subscriber2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="57" column="60" lean-forward="false" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
+            <state relative-caret-position="254">
+              <caret line="48" column="70" lean-forward="true" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1497542466740" expanded="true" signature="2056:2080" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -65,10 +80,11 @@
       <file leaf-file-name="BTS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="89">
+              <caret line="30" column="65" lean-forward="false" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1497548903798" expanded="true" signature="2140:2170" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -77,10 +93,10 @@
       <file leaf-file-name="CameraDrone.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/CameraDrone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1497543034231" expanded="true" signature="1845:1851" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -89,10 +105,11 @@
       <file leaf-file-name="BTSDrone.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1497542466744" expanded="true" signature="1552:1582" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -101,8 +118,8 @@
       <file leaf-file-name="Animal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="34" column="56" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="34" selection-end-column="56" />
+            <state relative-caret-position="285">
+              <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,11 +136,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Config.getLong</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -177,23 +189,20 @@
         <option value="$PROJECT_DIR$/src/System/Config.java" />
         <option value="$PROJECT_DIR$/src/System/producers/Animal.java" />
         <option value="$PROJECT_DIR$/src/RabbbitMQ/producers/Animal.java" />
+        <option value="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber2.java" />
+        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java" />
+        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java" />
+        <option value="$PROJECT_DIR$/src/RabbitMQ/Config.java" />
         <option value="$PROJECT_DIR$/WeatherStation.txt" />
         <option value="$PROJECT_DIR$/Animal.txt" />
-        <option value="$PROJECT_DIR$/BTS.txt" />
         <option value="$PROJECT_DIR$/CameraDrone.txt" />
-        <option value="$PROJECT_DIR$/src/RabbitMQ/Config.java" />
-        <option value="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber2.java" />
-        <option value="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java" />
-        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java" />
-        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java" />
         <option value="$PROJECT_DIR$/src/RabbitMQ/producers/CameraDrone.java" />
+        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java" />
+        <option value="$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java" />
         <option value="$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java" />
-        <option value="$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java" />
+        <option value="$PROJECT_DIR$/BTS.txt" />
       </list>
     </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
@@ -218,6 +227,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,14 +294,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/amqp-client-4.0.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -306,7 +315,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Animal">
+  <component name="RunManager" selected="Application.BTS">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -606,46 +615,7 @@
       <toRun type="Application" name="WeatherStation" />
       <method />
     </configuration>
-    <configuration default="false" name="Subscribers" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
-      <toRun type="Application" name="Sub1" />
-      <toRun type="Application" name="Sub2" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Drones" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
-      <toRun type="Application" name="BTSDrone" />
-      <toRun type="Application" name="CameraDrone" />
-      <method />
-    </configuration>
-    <configuration default="false" name="NoDrones" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
-      <toRun type="Application" name="Animal" />
-      <toRun type="Application" name="BTS" />
-      <toRun type="Application" name="WeatherStation" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Simulation" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="RabbitMQ.consumers.Subscriber1" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="StudioRabbit" />
-      <envs />
-      <method>
-        <option name="Make" enabled="false" />
-        <option name="MakeProject" enabled="true" />
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Sub1" run_configuration_type="Application" />
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Sub2" run_configuration_type="Application" />
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="NoDrones" run_configuration_type="CompoundRunConfigurationType" />
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Drones" run_configuration_type="CompoundRunConfigurationType" />
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Drones" run_configuration_type="CompoundRunConfigurationType" />
-      </method>
-    </configuration>
-    <list size="12">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.Animal" />
       <item index="1" class="java.lang.String" itemvalue="Application.BTS" />
       <item index="2" class="java.lang.String" itemvalue="Application.BTSDrone" />
@@ -654,10 +624,6 @@
       <item index="5" class="java.lang.String" itemvalue="Application.Sub1" />
       <item index="6" class="java.lang.String" itemvalue="Application.Sub2" />
       <item index="7" class="java.lang.String" itemvalue="Compound.Unnamed" />
-      <item index="8" class="java.lang.String" itemvalue="Compound.Subscribers" />
-      <item index="9" class="java.lang.String" itemvalue="Compound.Drones" />
-      <item index="10" class="java.lang.String" itemvalue="Compound.NoDrones" />
-      <item index="11" class="java.lang.String" itemvalue="Application.Simulation" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -671,35 +637,6 @@
       <option name="presentableId" value="Default" />
       <updated>1495825916415</updated>
     </task>
-    <task id="LOCAL-00001" summary="Zmieniono ilość i sposób wysyłania wiadomości (bulk), usunięto wypisywanie w konsoli">
-      <created>1497370544054</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1497370544054</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Zmieniono sposób logowania, usunięto pętlę case - filename bazuje teraz na kluczu wiadomości">
-      <created>1497370665900</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1497370665900</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Usunięto tutki">
-      <created>1497370710479</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1497370710479</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Zmiana z routing na exchange">
-      <created>1497538230260</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1497538230260</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -713,14 +650,14 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3220859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2350081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21799028" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -768,13 +705,6 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Zmieniono ilość i sposób wysyłania wiadomości (bulk), usunięto wypisywanie w konsoli" />
-    <MESSAGE value="Zmieniono sposób logowania, usunięto pętlę case - filename bazuje teraz na kluczu wiadomości" />
-    <MESSAGE value="Usunięto tutki" />
-    <MESSAGE value="Zmiana z routing na exchange" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zmiana z routing na exchange" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -784,12 +714,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <marker date="1497542466744" expanded="true" signature="1629:1669" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/CameraDrone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1497543034231" expanded="true" signature="1845:1851" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -800,6 +740,7 @@
           <caret line="39" column="42" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1497548903798" expanded="true" signature="2140:2170" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -810,6 +751,7 @@
           <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1497542466744" expanded="true" signature="1552:1582" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -818,7 +760,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -836,7 +780,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding />
+          <folding>
+            <marker date="1497542466740" expanded="true" signature="776:781" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -844,7 +790,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -853,7 +801,7 @@
         <state relative-caret-position="510">
           <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1497542466740" expanded="true" signature="2056:2080" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -862,7 +810,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding />
+          <folding>
+            <marker date="1497542466744" expanded="true" signature="1629:1669" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -872,6 +822,7 @@
           <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1497548903798" expanded="true" signature="2140:2170" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -882,6 +833,7 @@
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1497542466744" expanded="true" signature="1552:1582" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -891,7 +843,7 @@
         <state relative-caret-position="544">
           <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1497543034231" expanded="true" signature="1845:1851" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -910,7 +862,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding />
+          <folding>
+            <marker date="1497542466740" expanded="true" signature="776:781" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -918,7 +872,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -927,7 +883,7 @@
         <state relative-caret-position="510">
           <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1497542466740" expanded="true" signature="2056:2080" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -936,7 +892,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding />
+          <folding>
+            <marker date="1497542466744" expanded="true" signature="1629:1669" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -946,6 +904,7 @@
           <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1497548903798" expanded="true" signature="2140:2170" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -956,6 +915,7 @@
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1497542466744" expanded="true" signature="1552:1582" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -965,111 +925,190 @@
         <state relative-caret-position="425">
           <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1497543034231" expanded="true" signature="1845:1851" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test1/Send.java" />
-    <entry file="file://$PROJECT_DIR$/src/test1/Recv.java" />
+    <entry file="file://$PROJECT_DIR$/src/test1/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test1/Recv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/test1/Recv.java" />
-    <entry file="file://$PROJECT_DIR$/src/test1/Send.java" />
+    <entry file="file://$PROJECT_DIR$/src/test1/Recv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test1/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/test2/Worker3.java" />
     <entry file="file://$PROJECT_DIR$/src/test2/Worker2.java" />
-    <entry file="file://$PROJECT_DIR$/src/test2/NewTask2.java" />
-    <entry file="file://$PROJECT_DIR$/src/test2/NewTask.java" />
-    <entry file="file://$PROJECT_DIR$/src/test2/Worker.java" />
-    <entry file="file://$PROJECT_DIR$/src/test1/Recv.java" />
-    <entry file="file://$PROJECT_DIR$/src/test1/Send.java" />
-    <entry file="file://$PROJECT_DIR$/src/sub/ReceiveLogs.java" />
-    <entry file="file://$PROJECT_DIR$/src/sub/EmitLog.java" />
+    <entry file="file://$PROJECT_DIR$/src/test2/NewTask2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test2/NewTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test2/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="45" column="39" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test1/Recv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test1/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sub/ReceiveLogs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sub/EmitLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/direct/ReceiveWarning.java" />
     <entry file="file://$PROJECT_DIR$/src/direct/ReceiveInfo.java" />
     <entry file="file://$PROJECT_DIR$/persons.txt" />
-    <entry file="file://$PROJECT_DIR$/WeatherStation.txt" />
-    <entry file="file://$PROJECT_DIR$/CameraDrone.txt" />
-    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber3.java" />
-    <entry file="file://$PROJECT_DIR$/Animal.txt" />
-    <entry file="file://$PROJECT_DIR$/BTS.txt">
+    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33345">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="34" column="56" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="34" selection-end-column="56" />
+        <state relative-caret-position="225">
+          <caret line="15" column="64" lean-forward="false" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1497542466740" expanded="true" signature="776:781" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.txt" />
+    <entry file="file://$PROJECT_DIR$/Animal.txt" />
+    <entry file="file://$PROJECT_DIR$/CameraDrone.txt" />
+    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+          <folding>
+            <marker date="1497542466744" expanded="true" signature="1629:1669" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/BTSDrone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1497542466744" expanded="true" signature="1552:1582" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/CameraDrone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1497543034231" expanded="true" signature="1845:1851" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="57" column="60" lean-forward="false" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
+        <state relative-caret-position="254">
+          <caret line="48" column="70" lean-forward="true" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
+          <folding>
+            <marker date="1497542466740" expanded="true" signature="2056:2080" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/Config.java">
+    <entry file="file://$PROJECT_DIR$/BTS.txt">
+      <provider editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-1003490">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="66" lean-forward="false" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+        <state relative-caret-position="-7177">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/WeatherStation.java">
+    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/producers/BTS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="89">
+          <caret line="30" column="65" lean-forward="false" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1497548903798" expanded="true" signature="2140:2170" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RabbitMQ/consumers/Subscriber1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="34" column="67" lean-forward="true" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

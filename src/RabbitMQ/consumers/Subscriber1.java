@@ -10,8 +10,11 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.InetAddress;
 import java.nio.ByteBuffer;
 import java.util.*;
+import org.apache.commons.net.ntp.NTPUDPClient;
+import org.apache.commons.net.ntp.TimeInfo;
 
 public class Subscriber1 {
 
@@ -23,6 +26,13 @@ public class Subscriber1 {
         factory.setHost("localhost");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
+
+
+//        String IpAddress = "25.67.28.99";
+        String IpAddress = "127.0.0.1";
+//        String TIME_SERVER = "time-a.nist.gov";
+        NTPUDPClient timeClient = new NTPUDPClient();
+        InetAddress inetAddress = InetAddress.getByName(IpAddress);
 
         //Exchanges avaliable :
         //Animals, BTS, BTSDrone, WeatherStation, CameraDrone;
@@ -52,7 +62,11 @@ public class Subscriber1 {
                 PrintWriter writer = new PrintWriter(new FileOutputStream(
                         new File(fileName),
                         true /* append = true */));
-                long get = System.currentTimeMillis();
+
+               // long get = System.currentTimeMillis();
+                TimeInfo timeInfo = timeClient.getTime(inetAddress);
+                long get = timeInfo.getReturnTime();
+
                 long time = get - ByteBuffer.wrap(body,1,8).getLong();
                 writer.print(get+";");
                 writer.print(time);

@@ -1,5 +1,4 @@
 package RabbitMQ.producers;
-
 /**
  * Created by Inisigme on 26-May-17.
  */
@@ -21,8 +20,8 @@ public class Animal {
     public static void main(String[] argv) throws Exception {
 
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setUsername("test");
-        factory.setPassword("test");
+        factory.setUsername("user");
+        factory.setPassword("user");
         //factory.setVirtualHost();
         factory.setHost("192.168.1.100");
         //factory.setPort(portNumber);
@@ -33,6 +32,7 @@ public class Animal {
         // factory.setHost("localhost");
         // Connection connection = factory.newConnection();
         // Channel channel = connection.createChannel();
+
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
 
         while(true) {
