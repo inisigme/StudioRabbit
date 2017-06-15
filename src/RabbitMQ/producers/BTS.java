@@ -23,12 +23,16 @@ public class BTS {
     public static final byte[] buf = new byte[200];
 
     public static void main(String[] argv) throws Exception {
-        //Remote time
 
-        //String TIME_SERVER = "time-a.nist.gov";
-        String IpAddress = "127.0.0.1";
+        String TIME_SERVER = "time-a.nist.gov";
         NTPUDPClient timeClient = new NTPUDPClient();
-        InetAddress inetAddress = InetAddress.getByName(IpAddress);
+        InetAddress inetAddress = InetAddress.getByName(TIME_SERVER);
+        TimeInfo timeInfo;
+
+        long timeBefore = System.currentTimeMillis();
+        timeInfo = timeClient.getTime(inetAddress);
+        long timeAfter = System.currentTimeMillis();
+        long timeDiff = (timeBefore + timeAfter - 2*timeInfo.getReturnTime())/2;
 
 //        ConnectionFactory factory = new ConnectionFactory();
 //        factory.setUsername("test1");
@@ -43,13 +47,12 @@ public class BTS {
          factory.setHost("localhost");
          Connection connection = factory.newConnection();
          Channel channel = connection.createChannel();
+
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
 
         while(true) {
             for (int j = 500; j > 0; --j){
-                TimeInfo timeInfo = timeClient.getTime(inetAddress);
-                long start_time = timeInfo.getReturnTime();
-                //long start_time = System.currentTimeMillis();
+                long start_time = System.currentTimeMillis() - timeDiff;
                 System.out.println(start_time);
                 buf[0] = 4;
                 byte[] bytes = ByteBuffer.allocate(8).putLong(start_time).array();

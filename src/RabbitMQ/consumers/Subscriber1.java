@@ -22,17 +22,20 @@ public class Subscriber1 {
 
     public static void main(String[] argv) throws Exception {
 
+        String TIME_SERVER = "time-a.nist.gov";
+        NTPUDPClient timeClient = new NTPUDPClient();
+        InetAddress inetAddress = InetAddress.getByName(TIME_SERVER);
+        TimeInfo timeInfo;
+
+        long timeBefore = System.currentTimeMillis();
+        timeInfo = timeClient.getTime(inetAddress);
+        long timeAfter = System.currentTimeMillis();
+        long timeDiff = (timeBefore + timeAfter - 2*timeInfo.getReturnTime())/2;
+
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
-
-
-//        String IpAddress = "25.67.28.99";
-        String IpAddress = "127.0.0.1";
-//        String TIME_SERVER = "time-a.nist.gov";
-        NTPUDPClient timeClient = new NTPUDPClient();
-        InetAddress inetAddress = InetAddress.getByName(IpAddress);
 
         //Exchanges avaliable :
         //Animals, BTS, BTSDrone, WeatherStation, CameraDrone;
@@ -63,10 +66,7 @@ public class Subscriber1 {
                         new File(fileName),
                         true /* append = true */));
 
-               // long get = System.currentTimeMillis();
-                TimeInfo timeInfo = timeClient.getTime(inetAddress);
-                long get = timeInfo.getReturnTime();
-
+                long get = System.currentTimeMillis() - timeDiff;
                 long time = get - ByteBuffer.wrap(body,1,8).getLong();
                 writer.print(get+";");
                 writer.print(time);
