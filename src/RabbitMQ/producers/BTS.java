@@ -35,13 +35,18 @@ public class BTS {
         long timeDiff = (timeBefore + timeAfter - 2*timeInfo.getReturnTime())/2;
 
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setUsername("test1");
-        factory.setPassword("test1");
-        //factory.setVirtualHost();
-        factory.setHost("25.67.28.99");
-        //factory.setPort(portNumber);
+        factory.setUri("amqp://xxfikmfg:JFchWCnY03w_XRNGK-2cnna21Ag-NIq_@golden-kangaroo.rmq.cloudamqp.com/xxfikmfg");
         Connection conn = factory.newConnection();
         Channel channel = conn.createChannel();
+
+//        ConnectionFactory factory = new ConnectionFactory();
+//        factory.setUsername("test1");
+//        factory.setPassword("test1");
+//        //factory.setVirtualHost();
+//        factory.setHost("25.67.28.99");
+//        //factory.setPort(portNumber);
+//        Connection conn = factory.newConnection();
+//        Channel channel = conn.createChannel();
 
 //         ConnectionFactory factory = new ConnectionFactory();
 //         factory.setHost("localhost");

@@ -19,12 +19,17 @@ public class BTSDrone {
 
     public static void main(String[] argv) throws Exception {
 
+//        ConnectionFactory factory = new ConnectionFactory();
+//        factory.setUsername("test");
+//        factory.setPassword("test");
+//        //factory.setVirtualHost();
+//        factory.setHost("192.168.1.100");
+//        //factory.setPort(portNumber);
+//        Connection conn = factory.newConnection();
+//        Channel channel = conn.createChannel();
+
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setUsername("test");
-        factory.setPassword("test");
-        //factory.setVirtualHost();
-        factory.setHost("192.168.1.100");
-        //factory.setPort(portNumber);
+        factory.setUri("amqp://xxfikmfg:JFchWCnY03w_XRNGK-2cnna21Ag-NIq_@golden-kangaroo.rmq.cloudamqp.com/xxfikmfg");
         Connection conn = factory.newConnection();
         Channel channel = conn.createChannel();
 
